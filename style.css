@@ -1,0 +1,15 @@
+.container {
+    margin-top: 50px;
+}
+
+.bad {
+    color: red;
+}
+
+.good {
+    color: green;
+}
+
+span {
+    font-weight: bold;
+}

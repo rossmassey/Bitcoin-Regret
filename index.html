@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Bitcoin Regret</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                Bitcoin Regret Checker
+            </div>
+            <div class="card-body">
+                <label>Amount Spent ($)</label>
+                <div class="form-group">
+                    <input id="amount" class="form-control" type="text" value="100">
+                </div>
+                <div class="form-group">
+                    <label>Date</label>
+                    <input id="dateSelector" class="form-control" type="date" min="2010-07-17"" max="2018-12-01" value="2018-12-01">
+                </div>
+                <hr/>
+                <button class="btn btn-lg btn-block btn-primary" id="submitButton">Check</button>
+
+                <div class="container">
+
+                    <p class="lead">If you invested <span id="amountSpan">$x</span> on <span id="dateSpan">x</span> in bitcoins
+                    it would now be worth: <span class="display-4" id="newAmountSpan">x</span></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
